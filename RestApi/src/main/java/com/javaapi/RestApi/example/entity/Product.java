@@ -23,5 +23,9 @@ import lombok.NoArgsConstructor;
 
 public class Product {
 	@Id
-     private int num;
+    private int num;
+	private int val;
+	private int nxtval;
+	
 }
+
