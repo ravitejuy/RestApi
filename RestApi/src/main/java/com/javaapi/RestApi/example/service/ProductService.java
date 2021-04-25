@@ -32,6 +32,14 @@ public class ProductService {
 //		return repository.findByValue(val).orElse(null);
 //	}
 	
-
-
+	public String deleteProduct(int id) {
+		repository.deleteById(id);
+		return "product removed"+id;
+	}
+	
+	
+//	public  Product  updateProduct(Product product) {
+//		existingProduct=repository.findById(product.getId()).orElse(null);
+//	}
+	
 }
